@@ -1,0 +1,107 @@
+best model
+SIZE: (2401, 17)
+MIN: 4.484155085839415e-44 MAX: 1.0
+threshold = 0.05
+
+ENTIRE_SET_ACC: 0.9225322782174095
+contains target in top3: 0.9841732611411912
+amount of uncertain predictions: 18
+percentage of uncertain predictions to the test set size: 0.007496876301541024
+
+amount of uncertain predictions containing target in top 3: 15
+percentage of containing target to uncertain predictions: 0.8333333333333334
+
+accuracy without uncertain class: 0.9274024339068401
+AVEARGE: 0.9440276236986129
+MIN: 0.003537386655807495
+MAX: 1.0
+
+ensemble
+SIZE: (2401, 17)
+MIN: 0.0 MAX: 1.0
+threshold = 0.05
+
+ENTIRE_SET_ACC: 0.9216992919616827
+contains target in top3: 0.9758433985839233
+amount of uncertain predictions: 26
+percentage of uncertain predictions to the test set size: 0.010828821324448146
+
+amount of uncertain predictions containing target in top 3: 21
+percentage of containing target to uncertain predictions: 0.8076923076923077
+
+accuracy without uncertain class: 0.9284210526315789
+AVEARGE: 0.8961266139108705
+MIN: 0.0
+MAX: 1.0
+
+lbp
+SIZE: (2401, 17)
+MIN: 5.17065067520964e-21 MAX: 1.0
+threshold = 0.05
+
+ENTIRE_SET_ACC: 0.8638067471886713
+contains target in top3: 0.9662640566430654
+amount of uncertain predictions: 34
+percentage of uncertain predictions to the test set size: 0.014160766347355268
+
+amount of uncertain predictions containing target in top 3: 30
+percentage of containing target to uncertain predictions: 0.8823529411764706
+
+accuracy without uncertain class: 0.8715673848753697
+AVEARGE: 0.8485205669217064
+MIN: 0.0009735673666000366
+MAX: 0.9999999998626065
+
+lbp4dim
+SIZE: (2401, 17)
+MIN: 1.2191296639625909e-43 MAX: 1.0
+threshold = 0.05
+
+ENTIRE_SET_ACC: 0.9233652644731362
+contains target in top3: 0.9845897542690546
+amount of uncertain predictions: 6
+percentage of uncertain predictions to the test set size: 0.0024989587671803417
+
+amount of uncertain predictions containing target in top 3: 5
+percentage of containing target to uncertain predictions: 0.8333333333333334
+
+accuracy without uncertain class: 0.9244258872651357
+AVEARGE: 0.9462471333646563
+MIN: 0.0021365880966186523
+MAX: 1.0
+
+top6
+SIZE: (2401, 17)
+MIN: 0.0 MAX: 1.0
+threshold = 0.05
+
+ENTIRE_SET_ACC: 0.9271137026239067
+contains target in top3: 0.9650145772594753
+amount of uncertain predictions: 44
+percentage of uncertain predictions to the test set size: 0.018325697625989172
+
+amount of uncertain predictions containing target in top 3: 38
+percentage of containing target to uncertain predictions: 0.8636363636363636
+
+accuracy without uncertain class: 0.9372083156554942
+AVEARGE: 0.9226016937387199
+MIN: 0.0
+MAX: 1.0
+
+xgb lbp
+SIZE: (2401, 17)
+MIN: 1.6991872e-10 MAX: 0.999992
+threshold = 0.05
+
+ENTIRE_SET_ACC: 0.6164098292378176
+contains target in top3: 0.8767180341524364
+amount of uncertain predictions: 65
+percentage of uncertain predictions to the test set size: 0.027072053311120368
+
+amount of uncertain predictions containing target in top 3: 45
+percentage of containing target to uncertain predictions: 0.6923076923076923
+
+accuracy without uncertain class: 0.625
+AVEARGE: 0.70726967
+MIN: 0.00027033687
+MAX: 0.99999
