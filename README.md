@@ -6,8 +6,6 @@
 
 Contains 
 * final application code (class_tool.py, manager.py, ui_qt.py)
-* executable application (ClassArt.zip)
-* weights (torch_model.pt) for the model
 * application icon (bakalarkaAppAvatar.ico)
 * README.md file with instruction how to use the app
 
@@ -15,7 +13,6 @@ Contains
 
 Contains 
 
-* the weights (torch_model.pt)
 * training, validation accuracy and loss (history.png)
 * validation (acc.txt) and test (acc_test.txt) accuracy
 
@@ -29,14 +26,12 @@ Contains
 * statistics about performance of each experiment (statistics.txt)
 * accuracy of experiments
 * confusion matrix of each experiment
-* weights for some of the experiments (except for ensemble and top)
 
 ## src
 
 Contains 
 
 * lbp_class (code for xgb_lbp experiments)
-* ui_app (application development code)
 * code *.py that illustrates the experimets and pipeline development
 * fm_1try.txt (consultation notes and original AlexNet architecture)
 
@@ -47,7 +42,6 @@ Conatins
 * statistics about performance of each step (statistics.txt)
 * accuracy of experiments
 * confusion matrix of each step
-* weights for some of the steps (except for ensemble)
 
 ## visualization_results
 
