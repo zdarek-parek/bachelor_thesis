@@ -1,0 +1,208 @@
+AlexNet(
+  (features): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+    (1): ReLU(inplace=True)
+    (2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (4): ReLU(inplace=True)
+    (5): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace=True)
+    (8): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): ReLU(inplace=True)
+    (10): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (11): ReLU(inplace=True)
+    (12): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(6, 6))
+  (classifier): Sequential(
+    (0): Dropout(p=0.5, inplace=False)
+    (1): Linear(in_features=9216, out_features=4096, bias=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=4096, out_features=4096, bias=True)
+    (5): ReLU(inplace=True)
+    (6): Linear(in_features=4096, out_features=17, bias=True)
+  )
+)
+Epoch 0/24
+----------
+train Loss: 1.1387 Acc: 0.6460
+val Loss: 1.0599 Acc: 0.6888
+
+Epoch 1/24
+----------
+train Loss: 0.8358 Acc: 0.7391
+val Loss: 0.6669 Acc: 0.7898
+
+Epoch 2/24
+----------
+train Loss: 0.7525 Acc: 0.7609
+val Loss: 0.5339 Acc: 0.8359
+
+Epoch 3/24
+----------
+train Loss: 0.6920 Acc: 0.7804
+val Loss: 0.5660 Acc: 0.8247
+
+Epoch 4/24
+----------
+train Loss: 0.6534 Acc: 0.7894
+val Loss: 0.6114 Acc: 0.8193
+
+Epoch 5/24
+----------
+train Loss: 0.6334 Acc: 0.7963
+val Loss: 0.5820 Acc: 0.8205
+
+Epoch 6/24
+----------
+train Loss: 0.6181 Acc: 0.8013
+val Loss: 0.6227 Acc: 0.8193
+
+Epoch 7/24
+----------
+train Loss: 0.4467 Acc: 0.8553
+val Loss: 0.3849 Acc: 0.8787
+
+Epoch 8/24
+----------
+train Loss: 0.3939 Acc: 0.8739
+val Loss: 0.3550 Acc: 0.8945
+
+Epoch 9/24
+----------
+train Loss: 0.3641 Acc: 0.8799
+val Loss: 0.3492 Acc: 0.8949
+
+Epoch 10/24
+----------
+train Loss: 0.3611 Acc: 0.8819
+val Loss: 0.3351 Acc: 0.8986
+
+Epoch 11/24
+----------
+train Loss: 0.3437 Acc: 0.8860
+val Loss: 0.3302 Acc: 0.9003
+
+Epoch 12/24
+----------
+train Loss: 0.3396 Acc: 0.8881
+val Loss: 0.3177 Acc: 0.9028
+
+Epoch 13/24
+----------
+train Loss: 0.3330 Acc: 0.8894
+val Loss: 0.3215 Acc: 0.9078
+
+Epoch 14/24
+----------
+train Loss: 0.3170 Acc: 0.8962
+val Loss: 0.3141 Acc: 0.9090
+
+Epoch 15/24
+----------
+train Loss: 0.3061 Acc: 0.8982
+val Loss: 0.3117 Acc: 0.9103
+
+Epoch 16/24
+----------
+train Loss: 0.3035 Acc: 0.9010
+val Loss: 0.3075 Acc: 0.9119
+
+Epoch 17/24
+----------
+train Loss: 0.3063 Acc: 0.8986
+val Loss: 0.3104 Acc: 0.9090
+
+Epoch 18/24
+----------
+train Loss: 0.2999 Acc: 0.9032
+val Loss: 0.3105 Acc: 0.9119
+
+Epoch 19/24
+----------
+train Loss: 0.3048 Acc: 0.8987
+val Loss: 0.3065 Acc: 0.9111
+
+Epoch 20/24
+----------
+train Loss: 0.3018 Acc: 0.8995
+val Loss: 0.3090 Acc: 0.9111
+
+Epoch 21/24
+----------
+train Loss: 0.2987 Acc: 0.9014
+val Loss: 0.3089 Acc: 0.9107
+
+Epoch 22/24
+----------
+train Loss: 0.2977 Acc: 0.8990
+val Loss: 0.3086 Acc: 0.9111
+
+Epoch 23/24
+----------
+train Loss: 0.2972 Acc: 0.9022
+val Loss: 0.3081 Acc: 0.9115
+
+Epoch 24/24
+----------
+train Loss: 0.3024 Acc: 0.8991
+val Loss: 0.3077 Acc: 0.9115
+
+Training complete in 445m 38s
+Best val Acc: 0.911924
+
+
+test accuracy 0.9012911286963765
+
+
+
+
+vsechny dec dat do jedne skupiny na konce pro tabulky
+vahovana loss func
+learning alg - adam nebo neco dalsiho
+add edges
+
+
+---------------
+trida - neumim se rozhodnout, kdyz distribuce neni jista (rozdil 1. a 2. nejpravdepodobnejsi)
+tata trida - dal na manualni zpracovani
+porovnani - klasifikace s nevim kam tridou a bez
+
+
+1. musim psat v jakem python souboru je to co ted popisuji, kde to muze najit clovek ktery tuto praci cte -- kod nepotrebuji v textu
+2. ensamble did not impove accuracy much, introducing uncertain class did, what to answer if the ask me why we left the ensamble -- jako experiment
+3. questions in the bakalrka text - in bold
+4. feature classification
+
+TODO:
+1. The application ignores \textbf{non-image files in the inside folders and non-folders} in main folder
+2. zmenit Ensemble
+3. lbp jako vstup do AlexNet (the Best) + jako 4 dim
+
+
+
+implementation
+Popsat celek - programaterska prirucka - co pouzivam, a co ty funkcr delaji, deleni pipelineu - hlavni, vysledek,  - testy - co mame k dispozici a vysledky s tim, kvalitu klasifikace, 
+
+
+diskusi popsat co jsme zkousely, 
+
+popis pro uzivatele jak se pouziva - samostatna kapitola
+\textbf{Shortly describe the entire process; the reasoning will be stated below.}
+After data collection, we had around 24,000 images, which is not enough to train a robust model, so we decided to use an architecture of the known successful model. 
+
+Model selection - architecture, fine-tuning of the pre-trained, or not trained - without weights.
+
+Pre-processing of the data before sending them to the model to train.
+
+Weight distribution - Data set is not equally distributed - classes of different size.
+
+Dec label.
+
+Contrast stretch.
+
+Ensemble.
+
+Uncertain class.
