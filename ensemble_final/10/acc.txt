@@ -1,0 +1,1 @@
+Best val Acc: 0.910262
