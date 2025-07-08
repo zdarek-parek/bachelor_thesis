@@ -1,0 +1,49 @@
+## prvni konzultace 
+# vysledky zatim: 
+    # 1. AlexNet -- vratit se k nejake hotove AlexNet
+    # 2. 68% on test set, ukazat grafy
+    # 3. Dartasety - 24 tisice obrazku, mozna ukazat skupiny, rozdeleni decorative arts
+    # 4. Predzpracovani, ktere aplikuji. (ukazat priklad) misto binarizace dat edge detecion (hrany ktere jsou v sedotonovem obrazku)
+# co dal:
+    # 1. Zvetsit datset pomoci data augmentation
+    # 2. Aplikovat sum - priblizit data z muzea k tem, co mam od Viktorie, robustnost -- dithering jako simulace tisku
+    # 3. Zmenit architekturu modelu, pridat vice vrstev - jakych?? Zjistit pomoci cross validace???
+# server:
+    # 1. Dochzi me pamet - pouyit server - muzu tam hodit slozky s obrazky??? -- napsat Martinovi 
+    # 2. Jak se pripojit na ten server - muzu pres cmd a VSCode - je to takhle v poradku - pres VSCode??
+    # 3. Proc nemuzu pres WinSCP??? Martin
+# text bakalrky:
+    # 1. Chci tam datvat prubeznou statistiku uspechu - ty grafy, ktere vykresluji po kazde uprave modelu, datasetu. Stoji za to?? -- spise jako proloha
+
+
+## druha konzultace
+
+vsechny dec dat do jedne skupiny na konce pro tabulky
+vahovana loss func
+learning alg - adam nebo neco dalsiho
+add edges
+
+
+############
+30 modelu s ruznymi params - co by se dalo zmenit jake params - pocty filtru v feature extraction
+ensemble
+
+zmenit pocet features v klasifikatoru
+
+natahnout kontrast - data augmentation
+
+1. 25epochs, contrast stretching, no weights
+2. 25epochs, contrast stretching, contrast in a dataset preparation
+3. 25epochs, contrast in dataset, weights ( total/ 17 ) * ( 1/ class_weight )
+4. 25epochs, contrast in dataset, weights ( total/ 17 ) * ( 1/ class_weight ), 	model.classifier[4] = nn.Linear(4096, 2048, bias=True), 
+	model.classifier[-1] = nn.Linear(2048, 17, bias=True)
+5. 25epochs, contrast in dataset, weights ( total/ 17 ) * ( 1/ class_weight ), 	model.classifier[4] = nn.Linear(4096, 1024, bias=True), 	model.classifier[-1] = nn.Linear(1024, 17, bias=True)
+6. 25epochs, contrast in dataset, weights ( total/ 17 ) * ( 1/ class_weight )
+	model.classifier[1] = nn.Linear(9216, 9216, bias = True)
+	model.classifier[4] = nn.Linear(9216, 4096, bias=True)
+	model.classifier[-1] = nn.Linear(4096, 17, bias=True)
+7. 25epochs, contrast in dataset, weights ( total/ 17 ) * ( 1/ class_weight )     
+	model.classifier[0] = nn.Dropout(p=0.3, inplace=False)
+7. 25epochs, contrast in dataset, weights ( total/ 17 ) * ( 1/ class_weight )     
+	model.classifier[0] = nn.Dropout(p=0.3, inplace=False)
+	model.classifier[3] = nn.Dropout(p=0.3, inplace=False)
